@@ -1,263 +1,329 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="men.css" />
-  <title>SOLERION - Women's Collection</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solerion - Premium Footwear</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sale.css">
 </head>
 <body>
-
-<header>
-    <div class="header-content">
-        <div style="display: flex; align-items: center;">
+    <header>
+        <div class="container">
             <div class="logo">SOLERION</div>
-            <nav>
+            <nav class="main-nav">
                 <a href="index.html">Home</a>
-                <a href="men.html">Men</a>
+                <a href="men.html" class="active">Men</a>
                 <a href="women.html">Women</a>
                 <a href="kids.html">Kids</a>
-                <a href="sale.html">Sale</a>
+                <a href="Sale.html">Sale</a>
             </nav>
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search shoe...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <i class="far fa-heart"></i>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">2</span>
+                </div>
+                <i class="far fa-user"></i>
+            </div>
         </div>
-      <div class="header-right">
-        <div class="search-box">
-          <input type="text" placeholder="Search shoes...">
+    </header>
+
+    <main>
+        <div class="container-fluid">
+            <aside class="sidebar">
+                <div class="category-title">Hottest Deals</div>
+                
+                <div class="filter-section">
+                    <h3>Footwear <i class="fas fa-chevron-down"></i></h3>
+                    <ul class="filter-list">
+                        <li>Sneakers</li>
+                        <li>Accessories</li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Condition</h3>
+                    <ul class="filter-list">
+                        <li>Limited Edition</li>
+                        <li>Online Only</li>
+                        <li>Sale Off</li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Style</h3>
+                    <ul class="filter-list">
+                        <li>Casual</li>
+                        <li>High Top</li>
+                        <li>Low Top</li>
+                        <li>Slide</li>
+                        <li>Mule</li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Products <i class="fas fa-chevron-down"></i></h3>
+                    <ul class="filter-list">
+                        <li>Wheels</li>
+                        <li>Slides</li>
+                        <li>Retros</li>
+                        <li>Track 6</li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Materials</h3>
+                    <ul class="filter-list">
+                        <li>Canvas</li>
+                        <li>Suede</li>
+                        <li>Synthetic Leather</li>
+                        <li>Leather</li>
+                        <li>Flannel</li>
+                        <li>Corduroy</li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Size</h3>
+                    <div class="size-grid">
+                        <button class="size-btn">36</button>
+                        <button class="size-btn">38.5</button>
+                        <button class="size-btn">37</button>
+                        <button class="size-btn">37.5</button>
+                        <button class="size-btn">38</button>
+                        <button class="size-btn">39</button>
+                        <button class="size-btn">39.5</button>
+                        <button class="size-btn">40.5</button>
+                        <button class="size-btn">40</button>
+                        <button class="size-btn">41</button>
+                        <button class="size-btn">41.5</button>
+                        <button class="size-btn">42</button>
+                        <button class="size-btn">42.5</button>
+                        <button class="size-btn">43</button>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Colors</h3>
+                    <div class="color-grid">
+                        <button class="color-btn" style="background: #FFFFFF; border: 1px solid #ddd;"></button>
+                        <button class="color-btn" style="background: #000000;"></button>
+                        <button class="color-btn" style="background: #FF6B6B;"></button>
+                        <button class="color-btn" style="background: #4ECDC4;"></button>
+                        <button class="color-btn" style="background: #FFB84D;"></button>
+                        <button class="color-btn" style="background: #8B7355;"></button>
+                        <button class="color-btn" style="background: #95A5A6;"></button>
+                        <button class="color-btn" style="background: #3498DB;"></button>
+                        <button class="color-btn" style="background: #E74C3C;"></button>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="main-content">
+                <div class="hero-banner">
+                    <div class="banner-content">
+                        <p class="banner-label">Limited time only</p>
+                        <h1>Get 30% off</h1>
+                        <p class="banner-text">Sneakers made with your comfort in mind<br>so you can put all of your focus into your<br>next session.</p>
+                    </div>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="TRAD-LX JANO - LOW">
+                            <i class="far fa-heart wishlist-icon"></i>
+                        </div>
+                        <h3 class="product-name">TRAD-LX JANO - LOW T</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">780.00 VND</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="TRAD-LX SLUB Minimalist">
+                            <i class="far fa-heart wishlist-icon"></i>
+                        </div>
+                        <h3 class="product-name">TRAD-LX SLUB Minimalist</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">780.00 VND</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="WRAPS JANOS - MAN H">
+                            <i class="far fa-heart wishlist-icon"></i>
+                        </div>
+                        <h3 class="product-name">WRAPS JANOS - MAN H</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">780.00 VND</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="WRAPS JANOS - LOW M">
+                            <i class="far fa-heart wishlist-icon"></i>
+                        </div>
+                        <h3 class="product-name">WRAPS JANOS - LOW M</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">780.00 VND</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="BASAS WORKSAUY - LOW">
+                            <i class="far fa-heart wishlist-icon"></i>
+                        </div>
+                        <h3 class="product-name">BASAS WORKSAUY - LOW</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">650.00 VND</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="BASAS WORKSAUY - HI">
+                            <i class="far fa-heart wishlist-icon"></i>
+                        </div>
+                        <h3 class="product-name">BASAS WORKSAUY - HI</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">650.00 VND</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="BASAS WORKSAUY - LOW">
+                            <i class="far fa-heart wishlist-icon"></i>
+                        </div>
+                        <h3 class="product-name">BASAS WORKSAUY - LOW</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">650.00 VND</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="BASAS WORKSAUY - HI">
+                            <i class="far fa-heart wishlist-icon"></i>
+                        </div>
+                        <h3 class="product-name">BASAS WORKSAUY - HI</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">650.00 VND</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="BASAS BUMPER GUM NE">
+                            <i class="far fa-heart wishlist-icon"></i>
+                        </div>
+                        <h3 class="product-name">BASAS BUMPER GUM NE</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">550.00 VND</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="TRACK 6 CLASS E - FLUE">
+                            <i class="far fa-heart wishlist-icon"></i>
+                        </div>
+                        <h3 class="product-name">TRACK 6 CLASS E - FLUE</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">1.480.00 VND</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="TRACK 6 CLASS E - LOW">
+                            <i class="far fa-heart wishlist-icon"></i>
+                        </div>
+                        <h3 class="product-name">TRACK 6 CLASS E - LOW</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">1.480.00 VND</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="BASAS WORKO - HIGH TO">
+                            <i class="far fa-heart wishlist-icon"></i>
+                        </div>
+                        <h3 class="product-name">BASAS WORKO - HIGH TO</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">650.00 VND</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="PETORIUM LIVING JOGGER M">
+                            <i class="far fa-heart wishlist-icon"></i>
+                            <span class="sale-badge">-36%</span>
+                        </div>
+                        <h3 class="product-name">PETORIUM LIVING JOGGER M</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">720.00 VND</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="PETORIUM LIVING JOGGER M">
+                            <i class="far fa-heart wishlist-icon"></i>
+                            <span class="sale-badge">-36%</span>
+                        </div>
+                        <h3 class="product-name">PETORIUM LIVING JOGGER M</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">720.00 VND</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="KANVAS X DORAEMON B">
+                            <i class="far fa-heart wishlist-icon"></i>
+                        </div>
+                        <h3 class="product-name">KANVAS X DORAEMON B</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">950.00 VND</p>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect fill='%23f5f5f5' width='300' height='300'/%3E%3C/svg%3E" alt="KANVAS X DORAEMON B">
+                            <i class="far fa-heart wishlist-icon"></i>
+                        </div>
+                        <h3 class="product-name">KANVAS X DORAEMON B</h3>
+                        <p class="product-category">SNEAKERS</p>
+                        <p class="product-price">850.00 VND</p>
+                    </div>
+                </div>
+
+                <div class="pagination">
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <span class="page-dots">...</span>
+                    <button class="page-btn">10</button>
+                    <button class="page-btn next-btn">Next</button>
+                </div>
+            </section>
         </div>
-        <button class="icon-btn">👤</button>
-        <button class="icon-btn">
-          🛒
-          <span class="cart-badge">3</span>
-        </button>
-        <button class="icon-btn">❤️</button>
-      </div>
-    </div>
-  </header>
+    </main>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Women's Collection</h1>
-      <p>Discover premium footwear designed for the modern man</p>
-      <button class="btn-primary">Shop Now</button>
-    </div>
-  </section>
-
-  <!-- Main Content -->
-  <div class="container">
-    <div class="content-header">
-      <h2>Women' Collection Shoes</h2>
-      <div class="sort-box">
-        <span style="color: #525252;">Sort by:</span>
-        <select>
-          <option>Featured</option>
-          <option>Price: Low to High</option>
-          <option>Price: High to Low</option>
-          <option>Newest</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="products-wrapper">
-      <!-- Filters -->
-      <aside class="filters">
-        <div class="filter-group">
-          <h3>Category</h3>
-          <div class="filter-option">
-            <input type="checkbox" id="sneakers" checked>
-            <label for="sneakers">Sneakers</label>
-          </div>
-          <div class="filter-option">
-            <input type="checkbox" id="dress">
-            <label for="dress">Dress Shoes</label>
-          </div>
-          <div class="filter-option">
-            <input type="checkbox" id="boots">
-            <label for="boots">Boots</label>
-          </div>
-          <div class="filter-option">
-            <input type="checkbox" id="casual">
-            <label for="casual">Casual</label>
-          </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>SOLERION</h3>
+                <p>Premium footwear for every<br>moment of your journey</p>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Solerion. All rights reserved.</p>
+            </div>
         </div>
-
-        <div class="filter-group">
-          <h3>Size</h3>
-          <div class="size-grid">
-            <button class="size-btn">7</button>
-            <button class="size-btn">8</button>
-            <button class="size-btn">9</button>
-            <button class="size-btn">10</button>
-            <button class="size-btn">11</button>
-            <button class="size-btn">12</button>
-          </div>
-        </div>
-
-        <div class="filter-group">
-          <h3>Price Range</h3>
-          <div class="filter-option">
-            <input type="radio" name="price" id="price1">
-            <label for="price1">Under $100</label>
-          </div>
-          <div class="filter-option">
-            <input type="radio" name="price" id="price2">
-            <label for="price2">$100 - $200</label>
-          </div>
-          <div class="filter-option">
-            <input type="radio" name="price" id="price3">
-            <label for="price3">$200 - $300</label>
-          </div>
-          <div class="filter-option">
-            <input type="radio" name="price" id="price4">
-            <label for="price4">Over $300</label>
-          </div>
-        </div>
-
-        <button class="btn-primary apply-filters">Apply Filters</button>
-      </aside>
-
-      <!-- Products Grid -->
-      <div class="products-grid">
-        <div class="products">
-          <div class="product-card">
-            <div class="product-image">
-              <img src="shoepng/fashion-shoes-sneakers.jpg"" alt="Classic Sneaker" />
-            </div>
-            <div class="product-info">
-              <h3 class="product-name">Classic Sneaker</h3>
-              <p class="product-desc">Premium comfort design</p>
-              <div class="product-footer">
-                <span class="product-price">$149</span>
-                <div class="cart-icon">🛒</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card">
-            <div class="product-image">
-              <img src="shoepng/brown-leather-shoes.jpg" alt="Leather Boot" />
-            </div>
-            <div class="product-info">
-              <h3 class="product-name">Leather Boot</h3>
-              <p class="product-desc">Handcrafted leather</p>
-              <div class="product-footer">
-                <span class="product-price">$299</span>
-                <div class="cart-icon">🛒</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card">
-            <div class="product-image">
-              <img src="shoepng/one-white-sneaker-shoe-isolated-white.jpg" alt="Running Shoe" />
-            </div>
-            <div class="product-info">
-              <h3 class="product-name">Running Shoe</h3>
-              <p class="product-desc">Advanced cushioning</p>
-              <div class="product-footer">
-                <span class="product-price">$179</span>
-                <div class="cart-icon">🛒</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card">
-            <div class="product-image">
-              <img src="shoepng/download.jpg" alt="Dress Oxford" />
-            </div>
-            <div class="product-info">
-              <h3 class="product-name">Dress Oxford</h3>
-              <p class="product-desc">Professional elegance</p>
-              <div class="product-footer">
-                <span class="product-price">$259</span>
-                <div class="cart-icon">🛒</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card">
-            <div class="product-image">
-              <img src="shoepng/download (1).jpg" alt="Casual Loafer" />
-            </div>
-            <div class="product-info">
-              <h3 class="product-name">Casual Loafer</h3>
-              <p class="product-desc">Everyday comfort</p>
-              <div class="product-footer">
-                <span class="product-price">$129</span>
-                <div class="cart-icon">🛒</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="product-card">
-            <div class="product-image">
-              <img src="shoepng/sport-running-shoes.jpg" alt="Sport Trainer" />
-            </div>
-            <div class="product-info">
-              <h3 class="product-name">Sport Trainer</h3>
-              <p class="product-desc">High performance</p>
-              <div class="product-footer">
-                <span class="product-price">$199</span>
-                <div class="cart-icon">🛒</div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Pagination -->
-        <div class="pagination">
-          <button class="page-btn">←</button>
-          <button class="page-btn active">1</button>
-          <button class="page-btn">2</button>
-          <button class="page-btn">3</button>
-          <button class="page-btn">→</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <h3>SOLERION</h3>
-          <p>Premium footwear for every occasion</p>
-          <div class="social-links">
-            <span>📘</span>
-            <span>📷</span>
-            <span>🐦</span>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>© 2025 Solerion. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // Size button toggle
-    document.querySelectorAll('.size-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        this.classList.toggle('active');
-      });
-    });
-
-    // Add to cart animation
-    document.querySelectorAll('.cart-icon').forEach(icon => {
-      icon.addEventListener('click', function(e) {
-        e.preventDefault();
-        const badge = document.querySelector('.cart-badge');
-        const currentCount = parseInt(badge.textContent);
-        badge.textContent = currentCount + 1;
-        
-        this.style.transform = 'scale(1.2)';
-        setTimeout(() => {
-          this.style.transform = 'scale(1)';
-        }, 200);
-      });
-    });
-  </script>
+    </footer>
 </body>
 </html>
