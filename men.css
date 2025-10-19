@@ -105,7 +105,7 @@
     .hero {
       /* background color fallback */
       background: #fafafa url('shoepng/placeholder-shoe-1.svg') no-repeat right center;
-      background-size: 40%;
+      background-size: 100%;
       padding: 80px;
       text-align: center;
       position: relative;
