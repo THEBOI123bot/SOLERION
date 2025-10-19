@@ -342,5 +342,55 @@
             <p>© 2025 Solerion. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        // Randomize product images on Sale page using images from shoepng/
+        (function(){
+            const images = [
+                'shoepng/brown-leather-shoes.jpg',
+                'shoepng/download (1).jpg',
+                'shoepng/download.jpg',
+                'shoepng/fashion-shoes-sneakers.jpg',
+                'shoepng/new-black-sneakers-isolated-white-background.jpg',
+                'shoepng/new-pair-white-sneakers-isolated-white (1).jpg',
+                'shoepng/new-pair-white-sneakers-isolated-white.jpg',
+                'shoepng/one-black-sneaker-shoe-isolated-white.jpg',
+                'shoepng/one-white-sneaker-shoe-isolated-white.jpg',
+                'shoepng/shoes.jpg',
+                'shoepng/sport-running-shoes.jpg'
+            ];
+
+            // shuffle helper
+            function shuffle(arr){
+                for(let i = arr.length -1; i > 0; i--){
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [arr[i], arr[j]] = [arr[j], arr[i]];
+                }
+                return arr;
+            }
+
+            function assignRandom(){
+                const imgs = Array.from(document.querySelectorAll('.product-image img'));
+                if(imgs.length === 0) return;
+
+                // we want to try to avoid duplicates: shuffle and cycle
+                const pool = shuffle(images.slice());
+                let idx = 0;
+
+                imgs.forEach((imgEl)=>{
+                    // if pool exhausted, reshuffle
+                    if(idx >= pool.length){
+                        idx = 0;
+                        shuffle(pool);
+                    }
+                    imgEl.src = pool[idx++];
+                    // ensure alt remains if previously set
+                    if(!imgEl.alt) imgEl.alt = 'Solerion product';
+                });
+            }
+
+            if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', assignRandom);
+            else assignRandom();
+        })();
+    </script>
 </body>
 </html>
