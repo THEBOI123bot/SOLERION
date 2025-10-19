@@ -30,13 +30,20 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    padding: 15px 0;
+    /* match Product.css header spacing for consistency */
+    padding: 0 80px;
+    height: 65px;
+    display: flex;
+    align-items: center;
 }
 
 header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .logo {
@@ -47,8 +54,9 @@ header .container {
 
 .main-nav {
     display: flex;
-    gap: 30px;
-    margin-left: 50px;
+    /* align with Product.css */
+    gap: 40px;
+    margin-left: 40px;
 }
 
 .main-nav a {
