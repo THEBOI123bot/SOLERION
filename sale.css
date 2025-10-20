@@ -72,10 +72,25 @@ header .container {
     color: #000;
 }
 
-.header-actions {
+.header-right {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    transition: opacity 0.3s;
+}
+
+.icon-btn:hover {
+    opacity: 0.7;
 }
 
 .search-box {
@@ -83,19 +98,33 @@ header .container {
 }
 
 .search-box input {
-    padding: 8px 35px 8px 15px;
+    padding: 10px 40px 10px 15px;
     border: 1px solid #ddd;
-    border-radius: 20px;
-    width: 200px;
-    font-size: 13px;
+    border-radius: 6px;
+    width: 220px;
+    font-size: 14px;
+    background: #f8f8f8;
 }
 
-.search-box i {
+.search-box input:focus {
+    outline: none;
+    border-color: #999;
+    background: white;
+}
+
+.search-icon {
     position: absolute;
     right: 12px;
     top: 50%;
     transform: translateY(-50%);
-    color: #999;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .header-actions i {
