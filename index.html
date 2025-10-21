@@ -1,376 +1,429 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Product.css" />
-    <title>SOLERION - Premium Footwear</title>
-    <header>
-        <div class="header-content">
-            <div style="display: flex; align-items: center;">
-                <div class="logo">SOLERION</div>
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="men.html">Men</a>
-                    <a href="women.html">Women</a>
-                    <a href="kids.html">Kids</a>
-                    <a href="sale.html">Sale</a>
-                </nav>
-            </div>
-            <div class="header-right">
-                <div class="search-box">
-                    <input type="search" placeholder="Search shoes...">
-                    <span class="search-icon">🔍</span>
-                </div>
-                <button class="icon-btn">❤️</button>
-                <button class="icon-btn">
-                    🛒
-                    <span class="cart-badge">3</span>
-                </button>
-                <button class="icon-btn">👤</button>
-            </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Product.css" />
+  <title>SOLERION - Premium Footwear</title>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <div style="display: flex; align-items: center;">
+      <div class="logo">SOLERION</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="kids.html">Kids</a>
+        <a href="sale.html">Sale</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <div class="search-box">
+        <input type="text" placeholder="Search shoes...">
+      </div>
+      <a class="btn-secondary" href="profile.html">👤</a>
+    </div>
+  </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Welcome!!</h1>
+        <p>Explore the new range of high-quality footwear made to be comfortable and fashionable. Between casual sneakers and formal dress shoes.</p>
+        <div class="hero-buttons">
+          <button class="btn-primary">Shop Now</button>
+          <a class="btn-secondary" href="men.html">View Collection</a>
         </div>
-    </header>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=500&fit=crop" alt="Featured shoes">
+      </div>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Welcome!!</h1>
-                <p>Explore the new range of high-quality footwear made to be comfortable and fashionable. Between casual sneakers and formal dress shoes.</p>
-                <div class="hero-buttons">
-                    <button class="btn-primary">Shop Now</button>
-                    <a class="btn-secondary" href="men.html">View Collection</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&h=500&fit=crop" alt="Featured shoes">
-            </div>
+  <!-- Categories -->
+  <section class="categories">
+    <div class="section-content">
+      <h2 class="section-header">Shop by Category</h2>
+      <div class="category-grid">
+        <div class="category-card">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=280&h=192&fit=crop" alt="Sneakers">
+          </div>
+          <h3>Sneakers</h3>
         </div>
-    </section>
-
-    <!-- Categories -->
-    <section class="categories">
-        <div class="section-content">
-            <h2 class="section-header">Shop by Category</h2>
-            <div class="category-grid">
-                <div class="category-card">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=280&h=192&fit=crop" alt="Sneakers">
-                    </div>
-                    <h3>Sneakers</h3>
-                </div>
-                <div class="category-card">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=280&h=192&fit=crop" alt="Dress Shoes">
-                    </div>
-                    <h3>Dress Shoes</h3>
-                </div>
-                <div class="category-card">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=280&h=192&fit=crop" alt="Boots">
-                    </div>
-                    <h3>Boots</h3>
-                </div>
-                <div class="category-card">
-                    <div class="category-image">
-                        <img src="https://images.unsplash.com/photo-1603487742131-4160ec999306?w=280&h=192&fit=crop" alt="Sandals">
-                    </div>
-                    <h3>Sandals</h3>
-                </div>
-            </div>
+        <div class="category-card">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=280&h=192&fit=crop" alt="Dress Shoes">
+          </div>
+          <h3>Dress Shoes</h3>
         </div>
-    </section>
-
-    <!-- Featured Products -->
-    <section class="featured">
-        <div class="section-content">
-            <div class="featured-header">
-                <h2>Featured Products</h2>
-                <a href="#" class="view-all">View All →</a>
-            </div>
-            <div class="product-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=280&h=256&fit=crop" alt="Nike Air Max">
-                    </div>
-                    <div class="product-info">
-                        <h3>Nike Air Max</h3>
-                        <p>Premium running shoes</p>
-                        <div class="product-footer">
-                            <span class="price">$149</span>
-                            <button class="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=280&h=256&fit=crop" alt="Classic Oxford">
-                    </div>
-                    <div class="product-info">
-                        <h3>Classic Oxford</h3>
-                        <p>Elegant dress shoes</p>
-                        <div class="product-footer">
-                            <span class="price">$199</span>
-                            <button class="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=280&h=256&fit=crop" alt="Urban Boot">
-                    </div>
-                    <div class="product-info">
-                        <h3>Urban Boot</h3>
-                        <p>Stylish ankle boots</p>
-                        <div class="product-footer">
-                            <span class="price">$179</span>
-                            <button class="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1603487742131-4160ec999306?w=280&h=256&fit=crop" alt="Beach Walker">
-                    </div>
-                    <div class="product-info">
-                        <h3>Beach Walker</h3>
-                        <p>Comfortable sandals</p>
-                        <div class="product-footer">
-                            <span class="price">$89</span>
-                            <button class="add-to-cart">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="category-card">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=280&h=192&fit=crop" alt="Boots">
+          </div>
+          <h3>Boots</h3>
         </div>
-    </section>
-
-    <!-- All Products -->
-    <section id="all-products" class="all-products">
-        <div class="section-content">
-            <div class="products-header">
-                <h2>All Products</h2>
-                <div class="sort-controls">
-                    <select class="sort-select">
-                        <option>Sort by: Featured</option>
-                        <option>Price: Low to High</option>
-                        <option>Price: High to Low</option>
-                        <option>Newest</option>
-                    </select>
-                </div>
-            </div>
-            <div class="products-layout">
-                <aside class="filters">
-                    <div class="filter-group">
-                        <h3>Filters</h3>
-                    </div>
-                    <div class="filter-group">
-                        <div class="filter-title">Category</div>
-                        <div class="filter-options">
-                            <div class="filter-option">
-                                <input type="checkbox" id="sneakers">
-                                <label for="sneakers">Sneakers</label>
-                            </div>
-                            <div class="filter-option">
-                                <input type="checkbox" id="dress">
-                                <label for="dress">Dress Shoes</label>
-                            </div>
-                            <div class="filter-option">
-                                <input type="checkbox" id="boots">
-                                <label for="boots">Boots</label>
-                            </div>
-                            <div class="filter-option">
-                                <input type="checkbox" id="sandals">
-                                <label for="sandals">Sandals</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filter-group">
-                        <div class="filter-title">Price Range</div>
-                        <div class="filter-options">
-                            <div class="filter-option">
-                                <input type="checkbox" id="p1">
-                                <label for="p1">$0 - $50</label>
-                            </div>
-                            <div class="filter-option">
-                                <input type="checkbox" id="p2">
-                                <label for="p2">$50 - $100</label>
-                            </div>
-                            <div class="filter-option">
-                                <input type="checkbox" id="p3">
-                                <label for="p3">$100 - $200</label>
-                            </div>
-                            <div class="filter-option">
-                                <input type="checkbox" id="p4">
-                                <label for="p4">$200+</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="filter-group">
-                        <div class="filter-title">Size</div>
-                        <div class="size-buttons">
-                            <button class="size-btn">7</button>
-                            <button class="size-btn">8</button>
-                            <button class="size-btn">9</button>
-                            <button class="size-btn">10</button>
-                            <button class="size-btn">11</button>
-                            <button class="size-btn">12</button>
-                        </div>
-                    </div>
-                    <button class="apply-filters">Apply Filters</button>
-                </aside>
-                <div class="all-products-grid">
-                    <div class="all-product-card">
-                        <div class="all-product-image">
-                            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=300&h=256&fit=crop" alt="Sport Runner">
-                            <button class="wishlist-btn">♡</button>
-                        </div>
-                        <div class="all-product-info">
-                            <h3>NEW BALANCE SC ELITE V4</h3>
-                            <p>Athletic sneakers</p>
-                            <div class="all-product-footer">
-                                <span class="price">$129</span>
-                                <div class="rating">
-                                    <span class="star">★</span>
-                                    <span>4.5 (24)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="all-product-card">
-                        <div class="all-product-image">
-                            <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=300&h=256&fit=crop" alt="Formal Black">
-                            <button class="wishlist-btn">♡</button>
-                        </div>
-                        <div class="all-product-info">
-                            <h3>Formal Black</h3>
-                            <p>Business shoes</p>
-                            <div class="all-product-footer">
-                                <span class="price">$189</span>
-                                <div class="rating">
-                                    <span class="star">★</span>
-                                    <span>4.8 (12)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="all-product-card">
-                        <div class="all-product-image">
-                            <img src="https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=300&h=256&fit=crop" alt="Casual Loafer">
-                            <button class="wishlist-btn">♡</button>
-                        </div>
-                        <div class="all-product-info">
-                            <h3>Casual Loafer</h3>
-                            <p>Everyday comfort</p>
-                            <div class="all-product-footer">
-                                <span class="price">$99</span>
-                                <div class="rating">
-                                    <span class="star">★</span>
-                                    <span>4.2 (18)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="all-product-card">
-                        <div class="all-product-image">
-                            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=300&h=256&fit=crop" alt="High Top">
-                            <button class="wishlist-btn">♡</button>
-                        </div>
-                        <div class="all-product-info">
-                            <h3>High Top</h3>
-                            <p>Street style</p>
-                            <div class="all-product-footer">
-                                <span class="price">$159</span>
-                                <div class="rating">
-                                    <span class="star">★</span>
-                                    <span>4.6 (31)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="all-product-card">
-                        <div class="all-product-image">
-                            <img src="https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=300&h=256&fit=crop" alt="Trail Boot">
-                            <button class="wishlist-btn">♡</button>
-                        </div>
-                        <div class="all-product-info">
-                            <h3>Trail Boot</h3>
-                            <p>Outdoor adventure</p>
-                            <div class="all-product-footer">
-                                <span class="price">$219</span>
-                                <div class="rating">
-                                    <span class="star">★</span>
-                                    <span>4.7 (15)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="all-product-card">
-                        <div class="all-product-image">
-                            <img src="https://images.unsplash.com/photo-1603487742131-4160ec999306?w=300&h=256&fit=crop" alt="Summer Slide">
-                            <button class="wishlist-btn">♡</button>
-                        </div>
-                        <div class="all-product-info">
-                            <h3>Summer Slide</h3>
-                            <p>Pool & beach</p>
-                            <div class="all-product-footer">
-                                <span class="price">$69</span>
-                                <div class="rating">
-                                    <span class="star">★</span>
-                                    <span>4.1 (22)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="category-card">
+          <div class="category-image">
+            <img src="https://images.unsplash.com/photo-1603487742131-4160ec999306?w=280&h=192&fit=crop" alt="Sandals">
+          </div>
+          <h3>Sandals</h3>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-        <footer class="site-footer">
-        <div class="container footer-grid">
-            <div class="footer-brand">
-                <h3>SOLERION</h3>
-                <p class="muted">Premium footwear for every moment</p>
+  <!-- Featured Products -->
+  <section class="featured">
+    <div class="section-content">
+      <div class="featured-header">
+        <h2>Featured Products</h2>
+        <a href="#" class="view-all">View All →</a>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=280&h=256&fit=crop" alt="Nike Air Max">
+          </div>
+          <div class="product-info">
+            <h3>Nike Air Max</h3>
+            <p>Premium running shoes</p>
+            <div class="product-footer">
+              <span class="price">$149</span>
+              <button class="add-to-cart">Add to Cart</button>
             </div>
-
-            <nav class="footer-links" aria-label="Quick links">
-                <a href="index.html">Home</a>
-                <a href="men.html">Men</a>
-                <a href="women.html">Women</a>
-                <a href="kids.html">Kids</a>
-                <a href="sale.html">Sale</a>
-            </nav>
-
-            <div class="footer-newsletter">
-                <label for="newsletter" class="muted">Get updates & offers</label>
-                <div class="newsletter-form">
-                    <input id="newsletter" type="email" placeholder="Your email" />
-                    <button class="btn-sub">Subscribe</button>
-                </div>
-                <div class="social-icons simple">
-                    <a href="#" aria-label="facebook">📘</a>
-                    <a href="#" aria-label="instagram">📷</a>
-                    <a href="#" aria-label="twitter">🐦</a>
-                </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=280&h=256&fit=crop" alt="Classic Oxford">
+          </div>
+          <div class="product-info">
+            <h3>Classic Oxford</h3>
+            <p>Elegant dress shoes</p>
+            <div class="product-footer">
+              <span class="price">$199</span>
+              <button class="add-to-cart">Add to Cart</button>
             </div>
+          </div>
         </div>
-
-        <div class="container footer-bottom">
-            <p>© 2025 Solerion. All rights reserved.</p>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=280&h=256&fit=crop" alt="Urban Boot">
+          </div>
+          <div class="product-info">
+            <h3>Urban Boot</h3>
+            <p>Stylish ankle boots</p>
+            <div class="product-footer">
+              <span class="price">$179</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
         </div>
-        </footer>
-    
+        <div class="product-card">
+          <div class="product-image">
+            <img src="https://images.unsplash.com/photo-1603487742131-4160ec999306?w=280&h=256&fit=crop" alt="Beach Walker">
+          </div>
+          <div class="product-info">
+            <h3>Beach Walker</h3>
+            <p>Comfortable sandals</p>
+            <div class="product-footer">
+              <span class="price">$89</span>
+              <button class="add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        // Size button toggle
-        document.querySelectorAll('.size-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                btn.classList.toggle('active');
-            });
-        });
-    </script>
+  <!-- All Products -->
+  <section id="all-products" class="all-products">
+    <div class="section-content">
+      <div class="products-header">
+        <h2>All Products</h2>
+        <div class="sort-controls">
+          <select class="sort-select">
+            <option>Sort by: Featured</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest</option>
+          </select>
+        </div>
+      </div>
+      <div class="products-layout">
+        <aside class="filters">
+          <div class="filter-group">
+            <h3>Filters</h3>
+          </div>
+          <div class="filter-group">
+            <div class="filter-title">Category</div>
+            <div class="filter-options">
+              <div class="filter-option">
+                <input type="checkbox" id="sneakers">
+                <label for="sneakers">Sneakers</label>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="dress">
+                <label for="dress">Dress Shoes</label>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="boots">
+                <label for="boots">Boots</label>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="sandals">
+                <label for="sandals">Sandals</label>
+              </div>
+            </div>
+          </div>
+          <div class="filter-group">
+            <div class="filter-title">Price Range</div>
+            <div class="filter-options">
+              <div class="filter-option">
+                <input type="checkbox" id="p1">
+                <label for="p1">$0 - $50</label>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="p2">
+                <label for="p2">$50 - $100</label>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="p3">
+                <label for="p3">$100 - $200</label>
+              </div>
+              <div class="filter-option">
+                <input type="checkbox" id="p4">
+                <label for="p4">$200+</label>
+              </div>
+            </div>
+          </div>
+          <div class="filter-group">
+            <div class="filter-title">Size</div>
+            <div class="size-buttons">
+              <button class="size-btn">7</button>
+              <button class="size-btn">8</button>
+              <button class="size-btn">9</button>
+              <button class="size-btn">10</button>
+              <button class="size-btn">11</button>
+              <button class="size-btn">12</button>
+            </div>
+          </div>
+          <button class="apply-filters">Apply Filters</button>
+        </aside>
+        <div class="all-products-grid">
+          <div class="all-product-card">
+            <div class="all-product-image">
+              <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=300&h=256&fit=crop" alt="Sport Runner">
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="all-product-info">
+              <h3>NEW BALANCE SC ELITE V4</h3>
+              <p>Athletic sneakers</p>
+              <div class="all-product-footer">
+                <span class="price">$129</span>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span>4.5 (24)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all-product-card">
+            <div class="all-product-image">
+              <img src="https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=300&h=256&fit=crop" alt="Formal Black">
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="all-product-info">
+              <h3>Formal Black</h3>
+              <p>Business shoes</p>
+              <div class="all-product-footer">
+                <span class="price">$189</span>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span>4.8 (12)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all-product-card">
+            <div class="all-product-image">
+              <img src="https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=300&h=256&fit=crop" alt="Casual Loafer">
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="all-product-info">
+              <h3>Casual Loafer</h3>
+              <p>Everyday comfort</p>
+              <div class="all-product-footer">
+                <span class="price">$99</span>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span>4.2 (18)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all-product-card">
+            <div class="all-product-image">
+              <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=300&h=256&fit=crop" alt="High Top">
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="all-product-info">
+              <h3>High Top</h3>
+              <p>Street style</p>
+              <div class="all-product-footer">
+                <span class="price">$159</span>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span>4.6 (31)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all-product-card">
+            <div class="all-product-image">
+              <img src="https://images.unsplash.com/photo-1605812860427-4024433a70fd?w=300&h=256&fit=crop" alt="Trail Boot">
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="all-product-info">
+              <h3>Trail Boot</h3>
+              <p>Outdoor adventure</p>
+              <div class="all-product-footer">
+                <span class="price">$219</span>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span>4.7 (15)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all-product-card">
+            <div class="all-product-image">
+              <img src="https://images.unsplash.com/photo-1603487742131-4160ec999306?w=300&h=256&fit=crop" alt="Summer Slide">
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="all-product-info">
+              <h3>Summer Slide</h3>
+              <p>Pool & beach</p>
+              <div class="all-product-footer">
+                <span class="price">$69</span>
+                <div class="rating">
+                  <span class="star">★</span>
+                  <span>4.1 (22)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3>SOLERION</h3>
+        <p class="muted">Premium footwear for every moment</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Quick links">
+        <a href="index.html">Home</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="kids.html">Kids</a>
+        <a href="sale.html">Sale</a>
+      </nav>
+
+      <div class="footer-newsletter">
+        <label for="newsletter" class="muted">Get updates & offers</label>
+        <div class="newsletter-form">
+          <input id="newsletter" type="email" placeholder="Your email" />
+          <button class="btn-sub">Subscribe</button>
+        </div>
+        <div class="social-icons simple">
+          <a href="#" aria-label="facebook">📘</a>
+          <a href="#" aria-label="instagram">📷</a>
+          <a href="#" aria-label="twitter">🐦</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2025 Solerion. All rights reserved.</p>
+    </div>
+  </footer>
+
+<script>
+  // Size button toggle
+  document.querySelectorAll('.size-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('active');
+    });
+  });
+
+  // Add to Cart button animation (matching profile.html style)
+  document.querySelectorAll('.add-to-cart').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        this.style.transform = 'scale(1)';
+        const originalText = this.textContent;
+        this.textContent = '✓ Added!';
+        setTimeout(() => {
+          this.textContent = originalText;
+        }, 2000);
+      }, 100);
+    });
+  });
+
+  // Apply Filters button animation
+  document.querySelectorAll('.apply-filters').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        this.style.transform = 'scale(1)';
+        this.textContent = '✓ Applied!';
+        setTimeout(() => {
+          this.textContent = 'Apply Filters';
+        }, 2000);
+      }, 100);
+    });
+  });
+
+  // Subscribe button animation
+  document.querySelectorAll('.btn-sub').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        this.style.transform = 'scale(1)';
+        this.textContent = '✓ Subscribed!';
+        setTimeout(() => {
+          this.textContent = 'Subscribe';
+        }, 2000);
+      }, 100);
+    });
+  });
+
+  // Shop Now button animation
+  document.querySelectorAll('.btn-primary').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        this.style.transform = 'scale(1)';
+      }, 100);
+    });
+  });
+</script>
+
 </body>
 </html>

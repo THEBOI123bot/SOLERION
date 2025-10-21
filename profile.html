@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="profile.css" />
+  <title>SOLERION - My Profile</title>
+</head>
+<body>
+
+<header>
+  <div class="header-content">
+    <div style="display: flex; align-items: center;">
+      <div class="logo">SOLERION</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="kids.html">Kids</a>
+        <a href="sale.html">Sale</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <div class="search-box">
+        <input type="text" placeholder="Search shoes...">
+      </div>
+      <button class="icon-btn" onclick="window.location.href='profile.html'">👤</button>
+</header>
+
+<div class="container">
+  <div class="profile-wrapper">
+    <!-- Sidebar Navigation -->
+    <aside class="profile-sidebar">
+      <div class="profile-avatar">
+        <div class="avatar-circle">JD</div>
+        <h3>John Doe</h3>
+        <p class="muted">john.doe@email.com</p>
+      </div>
+      
+      <nav class="profile-nav">
+        <a href="#" class="nav-item active" data-section="overview">
+          <span>📊</span> Overview
+        </a>
+        <a href="#" class="nav-item" data-section="orders">
+          <span>📦</span> My Orders
+        </a>
+        <a href="#" class="nav-item" data-section="settings">
+          <span>⚙️</span> Settings
+        </a>
+        <a href="#" class="nav-item" data-section="addresses">
+          <span>📍</span> Addresses
+        </a>
+        <a href="cart.html" class="nav-item">
+          <span>🛒</span> Shopping Cart
+        </a>
+        <a href="favorites.html" class="nav-item">
+          <span>❤️</span> Favorites
+        </a>
+        <a href="#" class="nav-item logout">
+          <span>🚪</span> Logout
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="profile-content">
+      <!-- Overview Section -->
+      <section id="overview" class="content-section active">
+        <h2>Account Overview</h2>
+        
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" id="totalOrders">12</div>
+            <div class="stat-label">Total Orders</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="totalSpent">$2,847</div>
+            <div class="stat-label">Total Spent</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="favoritesCount">0</div>
+            <div class="stat-label">Favorites</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="cartCount">0</div>
+            <div class="stat-label">In Cart</div>
+          </div>
+        </div>
+
+        <div class="recent-section">
+          <h3>Recent Orders</h3>
+          <div class="order-list">
+            <div class="order-item">
+              <div class="order-info">
+                <strong>Order #10234</strong>
+                <span class="muted">Placed on Oct 15, 2025</span>
+              </div>
+              <div class="order-status status-delivered">Delivered</div>
+              <div class="order-total">$299.00</div>
+            </div>
+            <div class="order-item">
+              <div class="order-info">
+                <strong>Order #10233</strong>
+                <span class="muted">Placed on Oct 8, 2025</span>
+              </div>
+              <div class="order-status status-shipped">Shipped</div>
+              <div class="order-total">$179.00</div>
+            </div>
+            <div class="order-item">
+              <div class="order-info">
+                <strong>Order #10232</strong>
+                <span class="muted">Placed on Sep 28, 2025</span>
+              </div>
+              <div class="order-status status-delivered">Delivered</div>
+              <div class="order-total">$149.00</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Orders Section -->
+      <section id="orders" class="content-section">
+        <h2>Order History</h2>
+        <div class="orders-filter">
+          <button class="filter-btn active">All Orders</button>
+          <button class="filter-btn">Delivered</button>
+          <button class="filter-btn">Shipped</button>
+          <button class="filter-btn">Processing</button>
+        </div>
+        
+        <div class="order-list detailed">
+          <div class="order-card">
+            <div class="order-header">
+              <div>
+                <strong>Order #10234</strong>
+                <span class="muted">October 15, 2025</span>
+              </div>
+              <div class="order-status status-delivered">Delivered</div>
+            </div>
+            <div class="order-body">
+              <div class="order-product">
+                <div class="product-thumb"></div>
+                <div>
+                  <div>Leather Boot</div>
+                  <div class="muted">Size: 10 | Qty: 1</div>
+                </div>
+              </div>
+              <div class="order-total">$299.00</div>
+            </div>
+            <div class="order-actions">
+              <button class="btn-secondary">Track Order</button>
+              <button class="btn-secondary">View Details</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Settings Section -->
+      <section id="settings" class="content-section">
+        <h2>Account Settings</h2>
+        
+        <div class="settings-form">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" value="John Doe" placeholder="Enter your name">
+          </div>
+          
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" value="john.doe@email.com" placeholder="Enter your email">
+          </div>
+          
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" value="+63 912 345 6789" placeholder="Enter your phone">
+          </div>
+          
+          <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="date" value="1990-05-15">
+          </div>
+          
+          <button class="btn-primary">Save Changes</button>
+        </div>
+
+        <div class="password-section">
+          <h3>Change Password</h3>
+          <div class="form-group">
+            <label>Current Password</label>
+            <input type="password" placeholder="Enter current password">
+          </div>
+          <div class="form-group">
+            <label>New Password</label>
+            <input type="password" placeholder="Enter new password">
+          </div>
+          <div class="form-group">
+            <label>Confirm New Password</label>
+            <input type="password" placeholder="Confirm new password">
+          </div>
+          <button class="btn-primary">Update Password</button>
+        </div>
+      </section>
+
+      <!-- Addresses Section -->
+      <section id="addresses" class="content-section">
+        <h2>Saved Addresses</h2>
+        
+        <div class="addresses-grid">
+          <div class="address-card default">
+            <div class="address-badge">Default</div>
+            <h4>Home</h4>
+            <p>123 Main Street<br>Quezon City, Metro Manila<br>Philippines, 1100</p>
+            <div class="address-actions">
+              <button class="btn-link">Edit</button>
+              <button class="btn-link">Remove</button>
+            </div>
+          </div>
+          
+          <div class="address-card">
+            <h4>Office</h4>
+            <p>456 Business Ave<br>Makati, Metro Manila<br>Philippines, 1200</p>
+            <div class="address-actions">
+              <button class="btn-link">Edit</button>
+              <button class="btn-link">Set as Default</button>
+            </div>
+          </div>
+          
+          <div class="address-card add-new">
+            <div class="add-icon">+</div>
+            <p>Add New Address</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <h3>SOLERION</h3>
+      <p class="muted">Premium footwear for every moment</p>
+    </div>
+
+    <nav class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="men.html">Men</a>
+      <a href="women.html">Women</a>
+      <a href="kids.html">Kids</a>
+      <a href="sale.html">Sale</a>
+    </nav>
+
+    <div class="footer-newsletter">
+      <label class="muted">Get updates & offers</label>
+      <div class="newsletter-form">
+        <input type="email" placeholder="Your email" />
+        <button class="btn-sub">Subscribe</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© 2025 Solerion. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // Update counts from storage
+  function updateCounts() {
+    const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+    const favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+    
+    document.getElementById('headerCartCount').textContent = cart.length;
+    document.getElementById('headerFavCount').textContent = favorites.length;
+    document.getElementById('cartCount').textContent = cart.length;
+    document.getElementById('favoritesCount').textContent = favorites.length;
+  }
+
+  // Navigation between sections
+  document.querySelectorAll('.nav-item').forEach(item => {
+    item.addEventListener('click', function(e) {
+      if (this.classList.contains('logout') || this.getAttribute('href') !== '#') {
+        return;
+      }
+      
+      e.preventDefault();
+      
+      // Remove active class from all nav items and sections
+      document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
+      document.querySelectorAll('.content-section').forEach(section => section.classList.remove('active'));
+      
+      // Add active class to clicked nav item
+      this.classList.add('active');
+      
+      // Show corresponding section
+      const sectionId = this.dataset.section;
+      document.getElementById(sectionId).classList.add('active');
+      
+      // Scroll to top of content
+      document.querySelector('.profile-content').scrollTop = 0;
+    });
+  });
+
+  // Save button animation
+  document.querySelectorAll('.btn-primary').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      this.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        this.style.transform = 'scale(1)';
+        this.textContent = '✓ Saved!';
+        setTimeout(() => {
+          this.textContent = this.textContent.includes('Password') ? 'Update Password' : 'Save Changes';
+        }, 2000);
+      }, 100);
+    });
+  });
+
+  // Order filters
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  // Initialize counts
+  updateCounts();
+</script>
+
+</body>
+</html>
